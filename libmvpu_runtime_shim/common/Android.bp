@@ -1,0 +1,27 @@
+mtk_cc_prebuilt_library {
+    arch: {
+        arm: {
+            cortex_a55: {
+                srcs: [
+                    "arm_armv8-2a_cortex-a55/libmvpu_runtime_shim.a",
+                ],
+            },
+        },
+        arm64: {
+            cortex_a55: {
+                srcs: [
+                    "arm64_armv8-2a_cortex-a55/libmvpu_runtime_shim.a",
+                ],
+            },
+        },
+    },
+    compile_multilib: "both",
+    mtk_brm_platform: "common",
+    mtk_product_line: "tablet",
+    mtk_src_path: "vendor/mediatek/proprietary/hardware/mvpu_runtime",
+    mtk_type: "cc_prebuilt_library_static",
+    name: "libmvpu_runtime_shim",
+    owner: "mtk",
+    proprietary: true,
+}
+

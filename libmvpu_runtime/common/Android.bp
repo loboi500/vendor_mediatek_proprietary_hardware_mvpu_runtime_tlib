@@ -1,0 +1,56 @@
+mtk_cc_prebuilt_library {
+    arch: {
+        arm: {
+            cortex_a55: {
+                shared_libs: [
+                    "libbase",
+                    "libc++",
+                    "liblog",
+                    "libion",
+                    "libion_mtk",
+                    "libcutils",
+                    "libcrypto",
+                    "libmvpu_cic_ci_compiler",
+                    "libmvpu_pattern",
+                    "libmvpu_engine",
+                    "libmvpu_config",
+                ],
+                srcs: [
+                    "arm_armv8-2a_cortex-a55/libmvpu_runtime.so",
+                ],
+            },
+        },
+        arm64: {
+            cortex_a55: {
+                shared_libs: [
+                    "libbase",
+                    "libc++",
+                    "liblog",
+                    "libion",
+                    "libion_mtk",
+                    "libcutils",
+                    "libcrypto",
+                    "libmvpu_cic_ci_compiler",
+                    "libmvpu_pattern",
+                    "libmvpu_engine",
+                    "libmvpu_config",
+                ],
+                srcs: [
+                    "arm64_armv8-2a_cortex-a55/libmvpu_runtime.so",
+                ],
+            },
+        },
+    },
+    compile_multilib: "both",
+    mtk_brm_platform: "common",
+    mtk_product_line: "tablet",
+    mtk_src_path: "vendor/mediatek/proprietary/hardware/mvpu_runtime",
+    mtk_type: "cc_prebuilt_library_shared",
+    name: "libmvpu_runtime",
+    owner: "mtk",
+    proprietary: true,
+    strip: {
+        none: true,
+    },
+}
+
