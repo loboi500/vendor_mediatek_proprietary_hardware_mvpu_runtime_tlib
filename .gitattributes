@@ -1,0 +1,4 @@
+libmvpu_runtime filter=lfs diff=lfs merge=lfs -text
+libmvpu_runtime_pub filter=lfs diff=lfs merge=lfs -text
+libmvpu_runtime_pub_shim filter=lfs diff=lfs merge=lfs -text
+libmvpu_runtime_shim filter=lfs diff=lfs merge=lfs -text
